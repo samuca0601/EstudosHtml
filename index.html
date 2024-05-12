@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Pesquisa com um Programador</title>
+</head>
+
+<body>
+    <div class="paginaConteiner">
+        <h1 class="títuloPaginaConteiner">FOMULÁRIO DE PESQUISA</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="camposDadosPessoaisConteiner">
+                <div class="inputDadosPessoaisConteiner">
+                    <label>Nome Completo</label>
+                    <input type="text" value="abacate">
+                </div>
+                <div class="inputDadosPessoaisConteiner">
+                    <label>Seu e-mail</label>
+                    <input type="email">
+                </div>
+                <div class="inputDadosPessoaisConteiner">
+                    <label>Data de Nasc.</label>
+                    <input type="date">
+                </div>
+                <div class="inputDadosPessoaisConteiner">
+                    <label>Nível de Experiência</label>
+                    <select>
+                        <option>Junior</option>
+                        <option>Pleno</option>
+                        <option>Sênior</option>
+                        <option>Especialista</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Àreas de interesse</legend>
+            <div class="areasInteresseOpcoesConteiner">
+                <div class="InteresseOptionConteiner">
+                    <label for="frontend">Front-End</label>
+                    <input id="frontend" type="checkbox">
+                </div>
+
+                <div class="InteresseOptionConteiner">
+                    <label for="backend">Back-End</label>
+                    <input id="backend" type="checkbox">
+                </div>
+
+                <div class="InteresseOptionConteiner">
+                    <label>DevOps</label>
+                    <input type="checkbox">
+                </div>
+
+                <div class="InteresseOptionConteiner">
+                    <label>IA</label>
+                    <input type="checkbox">
+                </div>
+
+                <div class="InteresseOptionConteiner">
+                    <label>Segurança da Inf.</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Motivação</legend>
+            <div class="motivacaoConteiner">
+                <div class="motivacaoParticiparConteiner">
+                    <label for="motivacao">Motivação para Participar</label>
+                    <textarea id="motivacao" rows="4" cols="50"></textarea>
+                </div>
+                <div class="termoConteiner">
+                    <label>Aceitar Termos e Condições</label>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <button onclick="redirecionarParaTermo()">i</button>
+                </div>
+            </div>
+        </fieldset>
+        <button class="botaoEnviar">
+            <img src="https://cdn-icons-png.flaticon.com/128/6671/6671418.png" alt="Ícone">
+            Enviar
+        </button>
+
+    </div>
+</body>
+
+</html>
